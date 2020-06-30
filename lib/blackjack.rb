@@ -72,7 +72,7 @@ def runner
 
  # hit?(value)
 
-  display_card_total(hit?(value))
+  value = display_card_total(hit?(value))
   if(value > 21)
   end_game(value)
   end
