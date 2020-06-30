@@ -68,8 +68,11 @@ end
 def runner
   # code runner here
   welcome
-  initial_round
-  hit?
+  value = initial_round
+  hit?(value)
+  if(value > 21)
+  
+  
   
 end
     
