@@ -69,15 +69,9 @@ def runner
   # code runner here
   welcome
   value = initial_round
-
- # hit?(value)
-
   value = display_card_total(hit?(value))
   if(value > 21)
   end_game(value)
   end
-  
-  
-  
 end
     
