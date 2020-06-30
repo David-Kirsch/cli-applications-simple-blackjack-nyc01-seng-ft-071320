@@ -32,6 +32,10 @@ def end_game(total)
   puts "Sorry, you hit #{total}. Thanks for playing!"
 end
 
+def win_game(total)
+  puts "Congrats! You have #{total}. You won Blackjack!"
+end
+
 def initial_round
   # code #initial_round here
   card1 = deal_card
@@ -69,9 +73,15 @@ def runner
   # code runner here
   welcome
   value = initial_round
-  value = display_card_total(hit?(value))
+  while(value < 21)
+    value = display_card_total(hit?(value))
+  end
   if(value > 21)
   end_game(value)
   end
+  if(value == 21)
+    win_game(value)
+  end
+  
 end
     
