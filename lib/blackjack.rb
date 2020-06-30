@@ -70,9 +70,9 @@ def runner
   welcome
   value = initial_round
 
-  hit?(value)
-  binding.pry
-  display_card_total()
+ # hit?(value)
+
+  display_card_total(hit?(value))
   if(value > 21)
   end_game(value)
   end
