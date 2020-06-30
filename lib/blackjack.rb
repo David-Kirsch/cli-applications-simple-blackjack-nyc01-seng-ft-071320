@@ -54,36 +54,6 @@ def hit?(current_total)
   end
   current_total
 end
-=begin
-  if(response == 'h')
-    added_card = deal_card
-    new_total = current_total + added_card
-  end
-end
-
-def hit?(current_total)
-  # code hit? here
-  if(current_total > 21)
-    end_game(current_total)
-  end
-  prompt_user
-  input = get_user_input
-  
-  if(input == 'h')
-    new_card = deal_card
-    hit?(new_card + current_total)
-    
-  elsif(input == 's')
-    current_total
-  else
-    invalid_command
-  end
-    
-  current_total
-
-end
-
-=end
 
 def invalid_command
   # code invalid_command here
@@ -97,5 +67,6 @@ end
 
 def runner
   # code runner here
+  
 end
     
