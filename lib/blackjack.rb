@@ -82,6 +82,5 @@ def runner
   if(value == 21)
     win_game(value)
   end
-  
 end
     
