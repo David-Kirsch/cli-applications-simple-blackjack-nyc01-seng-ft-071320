@@ -70,7 +70,10 @@ def runner
   welcome
   value = initial_round
   hit?(value)
+  display_card_total()
   if(value > 21)
+  end_game(value)
+  end
   
   
   
